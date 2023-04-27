@@ -1,4 +1,8 @@
 
 export class Route {
-    constructor(protected destination: string){}
+    constructor
+    (
+        protected destination: string
+    ) 
+    {}
 }
