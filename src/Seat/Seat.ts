@@ -9,3 +9,7 @@ export enum seattypes {
     WINDOW,
     AISLE
 }
+
+export class Seat {
+    constructor(public seatNumber: string, seatType: seattypes){}
+}

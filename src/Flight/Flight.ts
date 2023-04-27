@@ -1,3 +1,4 @@
+import { Airline } from "../Airline/Airline";
 
 export enum meals {
     VEGETARIAN,
@@ -7,3 +8,7 @@ export enum meals {
     KOSHER,
     FORTH
 } 
+
+export class Flight {
+    constructor(public flightNumber: number, public departure: string, public arrivalTime: string, airline: Airline){}
+}
