@@ -11,5 +11,5 @@ export enum seattypes {
 }
 
 export class Seat {
-    constructor(public seatNumber: string, seatType: seattypes){}
+    constructor(public seatNumber: string, seatTypes: seattypes){}
 }

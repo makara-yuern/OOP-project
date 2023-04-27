@@ -1,4 +1,5 @@
 import { Airline } from "../Airline/Airline";
+import { Passanger } from "../Passanger/Passanger";
 
 export enum meals {
     VEGETARIAN,
@@ -10,5 +11,5 @@ export enum meals {
 } 
 
 export class Flight {
-    constructor(public flightNumber: number, public departure: string, public arrivalTime: string, airline: Airline){}
+    constructor(public flightNumber: number, public departure: string, public arrivalTime: string, passangers: Passanger){}
 }
