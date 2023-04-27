@@ -12,8 +12,10 @@ export enum meals {
 export class Flight {
     constructor
     (
-        public flightNumber: number, public departure: string, public arrivalTime: string, 
-        passangers: Passanger, meal: meals
-    ) 
-    {}
+        public flightNumber: number, 
+        public departure: string, 
+        public arrivalTime: string, 
+        passangers: Passanger, 
+        meal: meals
+    ) {}
 }

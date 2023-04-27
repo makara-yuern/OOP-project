@@ -11,10 +11,18 @@ import { Trip } from "../Trip/Trip";
 export class Booking {
     constructor
     (
-        private numberOfPassanger: number, private amount: number, private currency: string, 
-        public status: string, public dateTime: string, private numberOfTicket: number, 
-        public departureTime: string, protected referenceNumber: string, seats: Seat, trips: Trip, flights: Flight, 
-        boardingPasses: BoardingPass, tickets: ticket
-    ) 
-    {}
+        private numberOfPassanger: number, 
+        private amount: number, 
+        private currency: string, 
+        public status: string, 
+        public dateTime: string, 
+        private numberOfTicket: number, 
+        public departureTime: string, 
+        protected referenceNumber: string, 
+        seats: Seat, 
+        trips: Trip, 
+        flights: Flight, 
+        boardingPasses: BoardingPass, 
+        tickets: ticket
+    ) {}
 }

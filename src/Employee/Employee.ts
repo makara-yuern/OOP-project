@@ -14,13 +14,23 @@ export enum skills {
 export class Employee extends Person{
     constructor
     (
-        public personality: string, name: string, gender: genders, passportNumber: number, email: string, 
-        phoneNumber: number, address: string, birthDate: string, flights: Flight, skills: skills
+        public personality: string, 
+        name: string, 
+        email: string, 
+        phoneNumber: number, 
+        address: string, 
+        gender: genders, 
+        flights: Flight, 
+        skills: skills
     )
     {
         super
         (
-            name, gender, passportNumber, email, phoneNumber, address, birthDate
+            name, 
+            email, 
+            phoneNumber, 
+            address,
+            gender
         )
     }
 }

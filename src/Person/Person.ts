@@ -7,8 +7,10 @@ export enum genders {
 export abstract class Person {
     constructor
     (
-        private name: string, gender: genders, private passportNumber: number, private email: string, 
-        private phoneNumber: number, private address: string, private birthDate: string
-    ) 
-    {}
+        private name: string, 
+        private email: string, 
+        private phoneNumber: number, 
+        private address: string,
+        gender: genders
+    ) {}
 }

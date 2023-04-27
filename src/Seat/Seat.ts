@@ -13,7 +13,7 @@ export enum seattypes {
 export class Seat {
     constructor
     (
-        public seatNumber: string, seatTypes: seattypes
-    ) 
-    {}
+        public seatNumber: string, 
+        seatTypes: seattypes
+    ) {}
 }
