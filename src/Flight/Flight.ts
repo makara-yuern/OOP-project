@@ -13,9 +13,9 @@ export class Flight {
     constructor
     (
         public flightNumber: number, 
-        public departure: string, 
+        public from: string, 
+        public to: string,
         public arrivalTime: string, 
-        passangers: Passanger, 
-        meal: meals
+        private meal: meals
     ) {}
 }

@@ -11,6 +11,6 @@ export abstract class Person {
         private email: string, 
         private phoneNumber: number, 
         private address: string,
-        gender: genders
+        private gender: genders
     ) {}
 }

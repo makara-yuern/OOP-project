@@ -15,13 +15,13 @@ export class Employee extends Person{
     constructor
     (
         public personality: string, 
+        private skills: skills,
         name: string, 
         email: string, 
         phoneNumber: number, 
         address: string, 
         gender: genders, 
-        flights: Flight, 
-        skills: skills
+        flights: Flight
     )
     {
         super
