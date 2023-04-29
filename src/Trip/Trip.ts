@@ -5,6 +5,7 @@ export class Trip {
     constructor
     (
         public destination: string,
-        public duration: number
+        public duration: string, 
+        
     ) {}
 }

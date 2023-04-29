@@ -1,13 +1,26 @@
 import { Airplane } from "../Airplane/Airplane";
+import { Employee } from "../Employee/Employee";
 
 export class Airline {
-    public airplanes: Airplane[] = [];
-    constructor
-    (
-        public airlineName: string
+    employees: Employee[]=[];
+    constructor( public airlineName: string, airplanes: Airplane
     ) {}
-    
-    addAirline(airplane: Airplane) {
-        return this.airplanes.push(airplane);
+
+    addEmployee(employee: Employee){
+        this.employees.push(employee);
+    };
+
+    getEmplyee(){
+        return this.employees;
+    };
+
+    getEmployeeSalary(){
+
+        let totalSalaryEmployee: number = 0;
+
+        for(let employee of this.employees){
+            totalSalaryEmployee += employee.salary
+        }
+        return totalSalaryEmployee;
     }
 }

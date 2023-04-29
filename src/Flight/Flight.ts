@@ -1,3 +1,4 @@
+import { ticket } from "../Booking/Booking";
 import { Passanger } from "../Passanger/Passanger";
 
 export enum meals {
@@ -10,12 +11,18 @@ export enum meals {
 } 
 
 export class Flight {
+    passangers: Passanger[]=[]
     constructor
     (
-        public flightNumber: number, 
-        public from: string, 
-        public to: string,
+        public flightNumber: string, 
+        public departureTime: string, 
         public arrivalTime: string, 
-        private meal: meals
+        public dateTime: string,
+        meal: meals
+        
     ) {}
-}
+    addPassanger(passanger: Passanger){
+        this.passangers.push(passanger);
+    };
+   
+};

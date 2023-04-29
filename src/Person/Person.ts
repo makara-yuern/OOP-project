@@ -9,7 +9,7 @@ export abstract class Person {
     (
         private name: string, 
         private email: string, 
-        private phoneNumber: number, 
+        public phoneNumber: number, 
         private address: string,
         private gender: genders
     ) {}
